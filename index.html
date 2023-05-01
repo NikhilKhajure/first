@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant Website By Nikhil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,
+        h1,
+        h5 {
+            font-family: "Raleway", sans-serif;
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        .logo {
+            color: black;
+            font-size: 100px;
+            font-family: "Raleway", sans-serif;
+
+
+        }
+
+        .bgimg {
+            background-image: url(img/pizza5.jpg);
+            background-repeat: no-repeat;
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: static;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        .menue {
+            height: 100px;
+            border-radius: 30px;
+            margin-left: 150px;
+            transition-property: height;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+        }
+        .menue:hover{
+            
+            height: 200px;
+        }
+
+        @keyframes example {
+            0% {
+                background-image: url(img/pizza.jpg);
+            }
+
+            25% {
+                background-image: url(img/pizz1.jpg);
+            }
+
+            50% {
+                background-image: url(img/pizza2.jpg);
+            }
+
+            75% {
+                background-image: url(img/pizza3.jpg);
+            }
+
+            100% {
+                background-image: url(img/pizza4.jpg);
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="bgimg w3-display-container w3-text-white">
+        <div class="w3-display-middle w3-jumbo">
+            <p class="logo">Pizzeria</p>
+        </div>
+        <div class="w3-display-topleft w3-container w3-xlarge">
+            <p><button onclick="document.getElementById('About').style.display='block'"
+                    class="w3-button w3-black">About</button></p>
+                    <p><button onclick="document.getElementById('contact').style.display='block'"
+                        class="w3-button w3-black">contact</button></p>
+                    
+            <p><button onclick="document.getElementById('menu').style.display='block'"
+                    class="w3-button w3-black">menu</button></p>
+                   
+                    
+
+
+        </div>
+        <div class="w3-display-bottomleft w3-container">
+
+            <p class="w3-large">Near Zeal college , Pune</p>
+
+        </div>
+    </div>
+    <!-- About -->
+    <div id="About" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black">
+                <span onclick="document.getElementById('About').style.display='none'"
+                    class="w3-button w3-display-topright w3-large ">x</span>
+                <h1>About</h1>
+            </div>
+            <div class="w3-container">
+                <div class="w3-container w3-padding-64 w3-blue  w3-xlarge" id="About">
+                    <div class="w3-content">
+                        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+                        <p>The Pizza Restaurant was founded in Pune by <a href="https://instagram.com/ig_nikhil0106?igshid=MjkzY2Y1YTY=" target="_blank">Mr.Nikhil Khajure</a> , it is very
+                            important to be painstakingly followed by the education system, but at the same time, it
+                            happens that there is a lot of work and pain. For to come to the smallest detail, no one
+                            should practice any kind of work unless he derives some benefit from it.</p>
+                        <p><strong>The Chef?</strong> <a href="https://instagram.com/ig_nikhil0106?igshid=MjkzY2Y1YTY=" target="_blank">Mr.Nikhil Khajure</a><img src="/img/Imgchef.jpg"
+                                style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+                        <p>We are proud of our interiors.</p>
+                        <img src="/img/restoimg.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom"
+                            alt="Restaurant">
+                        <h1><b>Opening Hours</b></h1>
+
+                        <div class="w3-row">
+                            <div class="w3-col s6">
+                                <p>Mon & Tue CLOSED</p>
+                                <p>Wednesday 10.00 - 24.00</p>
+                                <p>Thursday 10:00 - 24:00</p>
+                            </div>
+                            <div class="w3-col s6">
+                                <p>Friday 10:00 - 12:00</p>
+                                <p>Saturday 10:00 - 23:00</p>
+                                <p>Sunday Closed</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Image of location/map -->
+                <img src="/img/locationimg.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black">
+                <span onclick="document.getElementById('contact').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+                <h1>Contact</h1>
+            </div>
+            <div class="w3-container">
+                <div class="w3-container w3-padding-64 w3-blue w3-xlarge" id="contact">
+                    <div class="w3-content">
+                        <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Near Zeal College , Pune</b></p>
+    <p>You can also contact us by phone 9021533078 or email nikhilkhajure79@gmail.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Menu Modal -->
+    <div id="menu" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('menu').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+
+            </div>
+            <div class="w3-container">
+                <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+                <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                    <h1>Welcome To The Menue Of Pizzeria</h1>
+                </div>
+
+                <div id="menu" class="w3-container menu w3-padding-32 w3-white">
+                    <h1><b>Margherita</b><img src="/img/pizz1.jpg" class="menue" alt="Margherita"> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;500</span></h1>
+                    <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    <hr>
+
+                    <h1><b>Formaggio</b> <img src="/img/pizza.jpg" class="menue" alt="Formaggio"><span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;600</span></h1>
+                    <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                    <hr>
+
+                    <h1><b>Chicken</b> <img src="/img/pizza2.jpg" class="menue" alt="Chicken"><span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;400</span></h1>
+                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+                    <hr>
+
+                    <h1><b>Pineapple'o'clock</b><img src="/img/pizza3.jpg" class="menue" alt="Pineapple'o'clock"> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;700</span></h1>
+                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                    <hr>
+
+                    <h1><b>Meat Town</b> <img src="/img/pizza4.jpg" class="menue" alt="Pineapple'o'clock"><span
+                            class="w3-tag w3-red w3-round">Hot!</span><span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;400</span></h1>
+                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                    <hr>
+
+                    <h1><b>Parma</b> <img src="/img/pizza5.jpg" class="menue" alt="Pineapple'o'clock"><span
+                            class="w3-tag w3-grey w3-round">New</span><span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;800</span></h1>
+                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                </div>
+
+                <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                    <h1><b>Lasagna</b> <img src="/img/pizza.jpg" class="menue" alt="Pineapple'o'clock"><span
+                            class="w3-tag w3-grey w3-round">Popular</span> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;400</span></h1>
+                    <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+                    <hr>
+
+                    <h1><b>Ravioli</b><img src="/img/pizza2.jpg" class="menue" alt="Pineapple'o'clock"> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;900</span></h1>
+                    <p class="w3-text-grey">Ravioli filled with cheese</p>
+                    <hr>
+
+                    <h1><b>Spaghetti Classica</b><img src="/img/pizza3.jpg" class="menue" alt="Pineapple'o'clock"> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;600</span></h1>
+                    <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+                    <hr>
+
+                    <h1><b>Seafood pasta</b><img src="/img/pizza5.jpg" class="menue" alt="Pineapple'o'clock"> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;300</span></h1>
+                    <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+                </div>
+
+
+                <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+                    <h1><b>Today's Soup</b><img src="/img/pizza3.jpg" class="menue" alt="Pineapple'o'clock"> <span
+                            class="w3-tag w3-grey w3-round">Seasonal</span><span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;600</span></h1>
+                    <p class="w3-text-grey">Ask the waiter</p>
+                    <hr>
+
+                    <h1><b>Bruschetta</b><img src="/img/pizza2.jpg" class="menue" alt="Pineapple'o'clock"> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;600</span></h1>
+                    <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+                    <hr>
+
+                    <h1><b>Garlic bread</b> <img src="/img/pizza5.jpg" class="menue" alt="Pineapple'o'clock"><span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;800</span></h1>
+                    <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+                    <hr>
+
+                    <h1><b>Tomozzarella</b><img src="/img/pizza2.jpg" class="menue" alt="Pineapple'o'clock"> <span
+                            class="w3-right w3-tag w3-dark-grey w3-round">&#8360;500</span></h1>
+                    <p class="w3-text-grey">Tomatoes and mozzarella</p>
+                </div>
+            </div>
+        </div>
+        
+
+       
+        
+
+
+
+</body>
+
+</html>
